@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+h1,
+h3 {
+    color: greenyellow;
+}
+
+p {
+    color: orange;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    font-size: 2rem;
+    padding: 10px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.gallery {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border-style: dotted;
+    border-color: orange;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+}
+
+.card div,
+.card h3,
+.card p {
+    padding: 10px;
+}
+
+.card:hover {
+    border-color: red;
+}
+
+@media screen and (width > 768px) {
+    .card {
+        width: 33%;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+}
